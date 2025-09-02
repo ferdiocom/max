@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chatbot-container">
+    <div class="chatbot-card">
+      <!-- Header -->
+      <div class="chatbot-header">
+        <div class="avatar">
+          <img id="avatar" src="./states/idle.png" alt="Assistant Avatar">
+        </div>
+        <h2>Max</h2>
+      </div>
+
+      <!-- Chat window -->
+      <div class="chat-window" id="chat-window">
+        <div class="message bot">Howdy! How can I help you today?</div>
+      </div>
+
+      <!-- Options -->
+      <div class="chat-options">
+        <button data-option="Document analysis">📄 Document analysis</button>
+        <button data-option="Data analysis">📊 Data analysis</button>
+        <button data-option="Bid library">📚 Bid library</button>
+      </div>
+
+      <!-- Input field -->
+      <form id="chat-form" class="chat-input-form">
+        <input type="text" id="chat-input" placeholder="Type a message...">
+        <button type="button" class="attach-btn">📎</button>
+        <button type="submit" class="send-btn">➤</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
